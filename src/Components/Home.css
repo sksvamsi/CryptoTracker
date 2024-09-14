@@ -1,0 +1,119 @@
+/* Basic reset and layout styling */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f7f9;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling */
+  .header {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 8px;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  .header p {
+    margin: 5px 0 0;
+    font-size: 16px;
+  }
+  
+  /* Search input styling */
+  .search-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-input:focus {
+    border-color: #80bdff;
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.25);
+  }
+  
+  /* Table styling */
+  .coin-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .coin-table th,
+  .coin-table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+  }
+  
+  .coin-table th {
+    background-color: #f1f1f1;
+    color: #333;
+    font-weight: 600;
+  }
+  
+  .coin-table tr:hover {
+    background-color: #f9f9f9;
+  }
+  
+  .coin-table .coin-name {
+    font-weight: 600;
+  }
+  
+  .coin-table .coin-symbol {
+    color: #6c757d;
+  }
+  
+  .coin-table .coin-price {
+    color: #28a745;
+    font-weight: bold;
+  }
+  
+  .coin-table .coin-change-24h {
+    font-weight: 500;
+    color: #dc3545; /* Red for negative change */
+  }
+  
+  .coin-table .coin-change-24h.positive {
+    color: #28a745; /* Green for positive change */
+  }
+  
+  /* Loading and error states */
+  .loading, .error {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .loading {
+    color: #007bff;
+  }
+  
+  .error {
+    color: #dc3545;
+  }
+  
+  .no-results {
+    text-align: center;
+    font-size: 18px;
+    color: #6c757d;
+  }
+  
